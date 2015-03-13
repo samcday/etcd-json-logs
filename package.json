@@ -1,0 +1,29 @@
+{
+  "name": "etcd-json-logs",
+  "version": "0.0.0",
+  "description": "Raw etcd logs go in. JSON log records go out.",
+  "main": "index.js",
+  "bin": {
+    "etcd-json-logs": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samcday/etcd-json-logs.git"
+  },
+  "keywords": [
+    "etcd",
+    "json",
+    "logs",
+    "bunyan"
+  ],
+  "author": "Sam Day <me@samcday.com.au>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samcday/etcd-json-logs/issues"
+  },
+  "homepage": "https://github.com/samcday/etcd-json-logs",
+  "dependencies": {
+    "bunyan": "^1.3.4",
+    "stream-splitter": "^0.3.2"
+  }
+}
