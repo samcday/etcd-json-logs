@@ -1,14 +1,14 @@
-# couchdb-json-logs
+# etcd-json-logs
 
-Raw CouchDB log lines go in. JSON log records go out.
+Raw etcd log lines go in. JSON log records go out.
 
 ```bash
-npm -g install couchdb-json-logs
+npm -g install etcd-json-logs
 
-cat /var/log/couchdb/couch.log | couchdb-json-logs
+cat /var/log/etcd.log | etcd-json-logs
 ```
 
-Uses [bunyan](https://github.com/trentm/node-bunyan) and [isaacs/couchdb-log-parse](https://github.com/isaacs/couchdb-log-parse) to do the magic.
+Uses [bunyan](https://github.com/trentm/node-bunyan) to log JSON records.
 
 ## License 
 
