@@ -16,6 +16,12 @@ stream.encoding = "utf8";
 
 stream.on("token", function(line) {
   var preambleMatch = lineFormat.exec(line);
+
+  if (preambleMatch === null) {
+    log.info({type: "misc"}, line);
+    return;
+  }
+
   line = line.substring(preambleMatch[0].length);
 
   var date = new Date(preambleMatch[1], preambleMatch[2], preambleMatch[3], preambleMatch[4], preambleMatch[5], preambleMatch[6]);
